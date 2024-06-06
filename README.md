@@ -95,3 +95,7 @@ Met de hostfile kan je de `localhost` of een ip omzetten naar een bepaalde url v
 * Opslaan en nu kan je in de browser naar http://healthone.localhost/ en als het goed is dan ziet je nu de website.
 
 Deze stappen zijn gebaseerd op de How-To-Guide die je kan terug vinden in je XAMP dashboard: http://localhost/dashboard/docs/configure-vhosts.html
+
+### login
+test@gmail.com
+123
