@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2022 at 03:03 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.0.13
+-- Generation Time: Jun 10, 2024 at 12:15 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,10 +18,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `healthone`
+-- Database: `healthone_1`
 --
-CREATE DATABASE IF NOT EXISTS `healthone` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `healthone`;
 
 -- --------------------------------------------------------
 
@@ -29,7 +27,6 @@ USE `healthone`;
 -- Table structure for table `categorie`
 --
 
-DROP TABLE IF EXISTS `categorie`;
 CREATE TABLE `categorie` (
   `id` int(5) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -52,7 +49,6 @@ INSERT INTO `categorie` (`id`, `name`, `picture`) VALUES
 -- Table structure for table `opening_hours`
 --
 
-DROP TABLE IF EXISTS `opening_hours`;
 CREATE TABLE `opening_hours` (
   `id` int(11) NOT NULL,
   `day` varchar(50) NOT NULL,
@@ -79,7 +75,6 @@ INSERT INTO `opening_hours` (`id`, `day`, `open_time`, `close_time`) VALUES
 -- Table structure for table `product`
 --
 
-DROP TABLE IF EXISTS `product`;
 CREATE TABLE `product` (
   `id` int(5) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -110,7 +105,6 @@ INSERT INTO `product` (`id`, `name`, `picture`, `description`, `cat_id`) VALUES
 -- Table structure for table `reviews`
 --
 
-DROP TABLE IF EXISTS `reviews`;
 CREATE TABLE `reviews` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
@@ -136,7 +130,6 @@ INSERT INTO `reviews` (`id`, `user_id`, `title`, `description`, `stars`, `produc
 -- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -153,7 +146,9 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`) VALUES
 (27, 'Admin', 'admin@healthone.com', '$2y$10$yRyNbGhWX/4PwjPpPk/uwumxeCttiLp0NszcF33ih8VrloiSzLZom', 'admin'),
 (28, 'Zakaria Ennaji', 'zakaria.ennaji@outlook.com', '$2y$10$q6vEJIcEj7Rx8Uqp6ONBderOacLOcJQoEHRQJzXKiQgkNvLDhVYx2', 'user'),
 (29, 'sam', 'sam@gmail.com', '$2y$10$LrQ5jZQb2p8j0nzKEH3Mu.tBjNl05cIffczigMcHX7pOD543rDfQC', 'user'),
-(30, 'Max', 'Max@max.com', '$2y$10$4G8IxdlP1J8MnvmB.i5kx..gGmmCDp0DzEhrwTlkZSFPjBl3lt2Vm', 'user');
+(30, 'Max', 'Max@max.com', '$2y$10$4G8IxdlP1J8MnvmB.i5kx..gGmmCDp0DzEhrwTlkZSFPjBl3lt2Vm', 'user'),
+(31, 'Leo', 'leo@gmail.com', '$2y$10$5RNcsmxks9TVJzVxXBBcKuz8tudpBGdO7/bKE3AkKERBmNYHM4HFO', 'user'),
+(32, 'test', 'test@gmail.com', '$2y$10$oQvTuBCzV2.Aiu4yO6TftexjznRWTpgg33x0nphdZp5a3RvJRTwmG', 'user');
 
 --
 -- Indexes for dumped tables
@@ -224,7 +219,7 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- Constraints for dumped tables
