@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 10, 2024 at 12:15 AM
+-- Generation Time: Jun 10, 2024 at 01:42 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -143,12 +143,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`) VALUES
-(27, 'Admin', 'admin@healthone.com', '$2y$10$yRyNbGhWX/4PwjPpPk/uwumxeCttiLp0NszcF33ih8VrloiSzLZom', 'admin'),
-(28, 'Zakaria Ennaji', 'zakaria.ennaji@outlook.com', '$2y$10$q6vEJIcEj7Rx8Uqp6ONBderOacLOcJQoEHRQJzXKiQgkNvLDhVYx2', 'user'),
-(29, 'sam', 'sam@gmail.com', '$2y$10$LrQ5jZQb2p8j0nzKEH3Mu.tBjNl05cIffczigMcHX7pOD543rDfQC', 'user'),
-(30, 'Max', 'Max@max.com', '$2y$10$4G8IxdlP1J8MnvmB.i5kx..gGmmCDp0DzEhrwTlkZSFPjBl3lt2Vm', 'user'),
-(31, 'Leo', 'leo@gmail.com', '$2y$10$5RNcsmxks9TVJzVxXBBcKuz8tudpBGdO7/bKE3AkKERBmNYHM4HFO', 'user'),
-(32, 'test', 'test@gmail.com', '$2y$10$oQvTuBCzV2.Aiu4yO6TftexjznRWTpgg33x0nphdZp5a3RvJRTwmG', 'user');
+(32, 'test', 'test@gmail.com', '$2y$10$oQvTuBCzV2.Aiu4yO6TftexjznRWTpgg33x0nphdZp5a3RvJRTwmG', 'user'),
+(33, 'admin', 'admin@admin.com', '$2y$10$GGl5HAtxBja1qoY6V7fJXuB//dosXqELO/9Ic3XHVi5dZIH2rpZ3W', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -219,7 +215,7 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- Constraints for dumped tables

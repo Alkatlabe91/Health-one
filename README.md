@@ -96,6 +96,9 @@ Met de hostfile kan je de `localhost` of een ip omzetten naar een bepaalde url v
 
 Deze stappen zijn gebaseerd op de How-To-Guide die je kan terug vinden in je XAMP dashboard: http://localhost/dashboard/docs/configure-vhosts.html
 
-### login
-test@gmail.com
-123
+### login user
+Email: test@gmail.com
+password: 123
+### login admin
+Email: admin@admin.com
+Password: admin
